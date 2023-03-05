@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-in Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>LOG IN</h1> <br>
+        <input type="text" id="uname" placeholder="Username" /> <br>
+        <input type="text" id="pass" placeholder="Password" /> <br> <br>
+        <button onclick="showInput()">Log In</button> <br><br><br>
+
+        <a href="#">Şifremi Unuttum</a>
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+            <p>Coded with <span style="color: #771212; font-size: 22px;">&#10084</span> <span>by Ömer
+                    Faruk<a href="mail to:ofozsahin.gmail.com"></a>
+                    <span class="material-symbols-outlined icon" style="color:  #771212; font-size:20px;">
+                        mail
+                    </span> </p>
+        </div>
+    </footer>
+    <script>
+        function showInput() {
+            var username = document.getElementById("uname").value;
+            var password = document.getElementById("pass").value;
+
+            alert("Username: " + username + "\nPassword: " + password);
+
+            document.getElementById("uname").value = "";
+            document.getElementById("pass").value = "";
+        }
+
+    </script>
+</body>
+
+</html>
