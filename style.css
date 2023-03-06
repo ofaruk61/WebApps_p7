@@ -2,7 +2,13 @@ body {
     margin: 60px 80px;
     background-image: url(sea.jpg);
     font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
